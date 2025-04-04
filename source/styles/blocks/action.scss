@@ -1,0 +1,58 @@
+.action {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid $bg-color-primary;
+    width: 100%;
+    top: 11px;
+
+    @media (min-width: $tablet-width) {
+      top: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+    }
+  }
+
+  &__wrapper {
+    padding: 58px 20px 40px;
+
+    @media (min-width: $tablet-width) {
+      padding: 98px 30px 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 112px 110px 104px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    left: -14px;
+    text-align: center;
+    width: 221px;
+    background-color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 32px;
+      line-height: 32px;
+      width: 282px;
+      left: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 333px;
+      font-size: 40px;
+      line-height: 40px;
+      left: 70px;
+    }
+  }
+}

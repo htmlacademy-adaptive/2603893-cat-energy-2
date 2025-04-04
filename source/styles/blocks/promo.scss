@@ -1,0 +1,122 @@
+.promo {
+  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-mobile@1x.webp");
+  background-repeat: no-repeat;
+  background-size: 100% 302px, 100% 302px;
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+
+    &::after {
+      content: "";
+      z-index: 2;
+      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-desktop@1x.webp");
+      background-size: cover, 1040px 100%;
+      background-position: 100%, 0%;
+      background-repeat: no-repeat;
+      width: 50vw;
+      height: 694px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    padding: 27px 20px 0;
+
+    @media (min-width: $tablet-width) {
+      min-height: 845px;
+      padding: 40px 0 0 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 581px;
+      padding: 110px 0 0 80px;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 167px;
+    left: 18px;
+
+    @media (min-width: $tablet-width) {
+      top: 237px;
+      left: 1px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 29px;
+      left: 50%;
+      transform: translateX(-30%);
+      z-index: 3;
+    }
+  }
+
+  &__title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @media (min-width: $tablet-width) {
+      color: #000000;
+      text-align: left;
+      margin-bottom: 40px;
+      width: 416px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 416px;
+      z-index: 4;
+    }
+  }
+
+  &__slogan {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      color: #000000;
+      text-align: left;
+      margin-bottom: 21px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: auto;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 242px;
+      z-index: 4;
+      top: 269px;
+      left: 91px;
+      padding: 14px 26px;
+      font-size: 20px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: auto;
+      bottom: 184px;
+      left: 80px;
+    }
+  }
+}

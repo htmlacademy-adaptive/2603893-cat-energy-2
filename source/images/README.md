@@ -1,55 +1,47 @@
-# Папка для отимизированных изображений
+# Папка для оптимизированных векторных иконок
 
 ```shell
 └── source/
-    └── images/
-        ├── hero@1x.jpg
-        ├── hero@1x.webp
-        ├── hero@2x.jpg
-        ├── hero@2x.webp
-        └── logo.svg
+    └── icons/
+        ├── tg.svg
+        ├── vk.svg
+        └── yt.svg
 ```
 
-Отсюда файлы изображений при продакшен-сборке без изменений попадают в `build/images/`:
+Находящиеся здесь иконки станут одним спрайтом:
 
 ```shell
 └── build/
-    └── images/
-        ├── hero@1x.jpg
-        ├── hero@1x.webp
-        ├── hero@2x.jpg
-        ├── hero@2x.webp
-        └── logo.svg
+    └── icons/                  # папка для спрайта
+        └── stack.svg           # спрайт
 ```
 
-При дев-сборке изображения не копируются в `build/images/`, сервер их забирает из `source/images/`
+## Пример подключения иконки
 
-## Пример подключения изображения
-
-В стилевом файле БЭМ-блока пути должны быть валидными для исходников (как подсказывает редактор):
+В файле БЭМ-блока путь должен быть валидным для исходников (как подсказывает редактор):
 
 ```scss
-.hero {
-  background-image:
-    image-set(
-      url("../../images/hero@1x.webp") 1x type("image/webp"),
-      url("../../images/hero@2x.webp") 2x type("image/webp"),
-      url("../../images/hero@1x.jpg") 1x type("image/jpeg"),
-      url("../../images/hero@2x.jpg") 2x type("image/jpeg")
-    );
+.search {
+  &::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: #444444;
+    mask-image: url("../../icons/search.svg");
+  }
 }
 ```
 
-Сборка сама исправит эти пути на валидные для билда:
+Сборка сама исправит этот путь на валидный для билда путь до фрагмента стек-спрайта:
 
 ```css
-.hero {
-  background-image:
-    image-set(
-      url("../images/hero@1x.webp") 1x type("image/webp"),
-      url("../images/hero@2x.webp") 2x type("image/webp"),
-      url("../images/hero@1x.jpg") 1x type("image/jpeg"),
-      url("../images/hero@2x.jpg") 2x type("image/jpeg")
-    );
+.search::before {
+  content: "";
+  width: 44px;
+  height: 44px;
+  display: block;
+  background: #444444;
+  mask-image: url("../icons/stack.svg#search");
 }
 ```
