@@ -7,6 +7,7 @@
 
 
 /* BLOCKS */
+@import "./blocks/page.scss";
 @import "./blocks/main-title.scss";
 @import "./blocks/basic-description.scss";
 @import "./blocks/hamburger.scss";
@@ -32,3 +33,9 @@
 @import "./blocks/action.scss";
 @import "./blocks/form.scss";
 @import "./blocks/slider.scss";
+@import "./blocks/custom-checkbox.scss";
+@import "./blocks/custom-radio.scss";
+@import "./blocks/programs-form.scss";
+@import "./blocks/contacts-form.scss";
+@import "./blocks/comments-form.scss";
+@import "./blocks/additional-form.scss";

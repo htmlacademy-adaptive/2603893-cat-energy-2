@@ -16,6 +16,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 110px;
+    z-index: 2;
   }
 
   &__text {
@@ -33,14 +34,47 @@
 
   &__description {
     font-family: $secondary-font;
-    color: $secodary-text-color;
     line-height: 20px;
     width: 140px;
+    text-align: left;
 
     @media (min-width: $tablet-width) {
       width: 157px;
       text-align: right;
     }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+  }
+
+  &__info {
+    color: $secodary-text-color;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__city {
+    margin-top: 0;
+    text-align: left;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+    /* stylelint-disable */
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+      font-size: 16px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+
+    /* stylelint-enable */
   }
 
   &--gray {

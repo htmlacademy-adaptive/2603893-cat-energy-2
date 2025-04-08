@@ -27,7 +27,7 @@
     width: 44px;
     height: 44px;
     display: block;
-    background: #444444;
+    background: $secodary-text-color;
     mask-image: url("../../icons/search.svg");
   }
 }
@@ -41,7 +41,7 @@
   width: 44px;
   height: 44px;
   display: block;
-  background: #444444;
+  background: $secodary-text-color;
   mask-image: url("../icons/stack.svg#search");
 }
 ```

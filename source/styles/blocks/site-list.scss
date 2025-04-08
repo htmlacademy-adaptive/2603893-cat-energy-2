@@ -80,6 +80,12 @@
       @media (min-width: ($desktop-width)) {
         color: #000000;
       }
+
+
+      &::before {
+        background-color: $bg-color-primary;
+      }
+
       /* stylelint-enable */
     }
   }

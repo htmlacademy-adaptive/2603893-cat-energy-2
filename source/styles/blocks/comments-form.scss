@@ -1,0 +1,62 @@
+.comments-form {
+  &__wrapper {
+    padding: 0 20px 15px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 70px 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px 70px;
+    }
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 38px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 87px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 78px;
+    }
+  }
+
+  &__textarea {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 14px 15px 0 14px;
+    resize: none;
+    width: 280px;
+    min-height: 150px;
+    color: $secodary-text-color;
+    border: 1px solid #d6d6d6;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 628px;
+      min-height: 175px;
+      padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 20px;
+      line-height: 30px;
+      width: 100%;
+      min-height: 175px;
+      padding-left: 20px;
+    }
+  }
+}

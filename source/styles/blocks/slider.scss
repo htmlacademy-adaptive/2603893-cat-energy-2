@@ -9,9 +9,13 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0;
     padding: 0;
     background-color: transparent;
+    max-width: 1440px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    top: 232px;
 
     &::before {
       display: none;
