@@ -56,49 +56,27 @@ if (sliderForm) {
     sliderBefore.style.clipPath = 'inset(0 50% 0 0)';
     sliderAfter.style.clipPath = 'inset(0 0 0 50%)';
   });
-
-
-  /* КАРТА */
-
-  const ymaps = window.ymaps;
-
-  ymaps.ready(() => {
-    // Проверяем, существует ли элемент с id "map"
-    const mapElement1 = document.getElementById('map');
-    if (mapElement1) {
-      const myMap1 = new ymaps.Map(mapElement1, {
-        center: [59.938679, 30.3230044], // Координаты центра первой карты
-        zoom: 14,
-        controls: []
-      });
-
-      const myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'images/map-pin.png', // Путь к изображению маркера
-        iconImageSize: [57, 53],
-        iconImageOffset: [-26, -42]
-      });
-
-      myMap1.geoObjects.add(myPlacemark1);
-    }
-
-    // Проверяем, существует ли элемент с id "map-2"
-    const mapElement2 = document.getElementById('map2');
-    if (mapElement2) {
-      const myMap2 = new ymaps.Map(mapElement2, {
-        center: [59.934280, 30.335099], // Координаты центра второй карты
-        zoom: 14,
-        controls: []
-      });
-
-      const myPlacemark2 = new ymaps.Placemark(myMap2.getCenter(), {}, {
-        iconLayout: 'default#image',
-        iconImageHref: 'images/map-pin.png', // Путь к изображению маркера
-        iconImageSize: [57, 53],
-        iconImageOffset: [-26, -42]
-      });
-
-      myMap2.geoObjects.add(myPlacemark2);
-    }
-  });
 }
+
+const ymaps = window.ymaps;
+
+ymaps.ready(() => {
+  // Проверяем, существует ли элемент с id "map"
+  const mapElement1 = document.getElementById('map');
+  if (mapElement1) {
+    const myMap1 = new ymaps.Map(mapElement1, {
+      center: [59.938679, 30.3230044], // Координаты центра первой карты
+      zoom: 14,
+      controls: []
+    });
+
+    const myPlacemark1 = new ymaps.Placemark(myMap1.getCenter(), {}, {
+      iconLayout: 'default#image',
+      iconImageHref: 'images/map-pin.png', // Путь к изображению маркера
+      iconImageSize: [57, 53],
+      iconImageOffset: [-26, -42]
+    });
+
+    myMap1.geoObjects.add(myPlacemark1);
+  }
+});
