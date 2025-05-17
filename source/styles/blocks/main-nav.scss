@@ -5,7 +5,9 @@
   background-color: #ffffff;
 
   &--active {
-    top: 65px;
+    position: relative;
+    /* top: 65px; */
+    top: 0;
     z-index: 2;
   }
 

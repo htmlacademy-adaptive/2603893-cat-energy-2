@@ -14,11 +14,11 @@
 
 <body class="page__body">
   <div class="page__container">
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <div class="main-header__container">
         <a class="main-header__logo logo" href="index.html">
           <picture>
-            <source media="(min-width:1220px)" width="70" height="59" type="image/svg+xml" srcset="images/logo_pic.svg">
+            <source media="(min-width:1220px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
             <source media="(min-width:708px)" width="60" height="50" type="image/svg+xml" srcset="images/logo_pic.svg">
             <img class="logo__pic" src="images/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="38">
           </picture>
@@ -28,14 +28,14 @@
             <img class="logo__text" src="images/logo-mobile-text.svg" alt="Текст логотипа" width="101" height="18">
           </picture>
         </a>
-        <div class="hamburger">
+        <div class="hamburger hamburger--active">
           <span class="visually-hidden">Открыть меню</span>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--active">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--current" href="index.html">главная</a>
@@ -51,7 +51,7 @@
     </header>
     <main class="main-container">
 
-      <section class="main-container__promo promo">
+      <section class="main-container__promo promo" data-test="hero">
         <div class="promo__wrapper">
           <h1 class="promo__title main-title">
             Функциональное
@@ -67,7 +67,7 @@
         </div>
       </section>
 
-      <section class="main-container__category category">
+      <section class="main-container__category category" data-test="programs">
         <h2 class="visually-hidden">Категория продуктов</h2>
         <div class="category__wrapper">
           <ul class="category__list">
@@ -93,7 +93,7 @@
         </div>
       </section>
 
-      <section class="main-container__steps steps">
+      <section class="main-container__steps steps" data-test="features">
         <div class="steps__wrapper">
           <h2 class="steps__title main-title main-title-additional">Как это работает</h2>
           <ol class="steps__list">
@@ -133,7 +133,7 @@
         </div>
       </section>
 
-      <section class="main-container__transformation transformation">
+      <section class="main-container__transformation transformation" data-test="proof">
         <div class="transformation__wrapper">
           <h2 class="transformation__title main-title main-title-additional">Живой пример</h2>
           <p class="transformation__description basic-description">
@@ -187,7 +187,7 @@
         </div>
       </section>
 
-      <section class="main-container__map map">
+      <section class="main-container__map map" data-test="contacts">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__wrapper">
           <div class="map__adress adress">
@@ -202,7 +202,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <div class="main-footer__wrapper">
         <a class="main-footer__logo" href="#">
           <img class="main-footer__logo-icon" src="images/footer-logo.svg" alt="Кэт Энерджи логотип" width="128" height="24">

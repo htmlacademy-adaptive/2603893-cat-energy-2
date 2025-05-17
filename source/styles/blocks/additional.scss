@@ -57,7 +57,8 @@
     padding: 186px 61px 43px 58px;
     background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-mobile@1x.webp");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%, 280px 290px;
+    background-position: 0 0, 50% 0;
 
     @media (min-resolution: 2dppx) {
       background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-mobile@2x.webp");
@@ -78,7 +79,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 185px 42px 43px;
+      padding: 185px 20px 20px;
       background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-desktop@1x.webp");
       background-repeat: no-repeat;
       width: 245px;
