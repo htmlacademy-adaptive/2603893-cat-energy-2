@@ -1,1 +1,6 @@
 /* здесь подключите шрифты */
+$primary-font: "Oswald";
+$secondary-font: "Lato";
+
+@include font-face("Lato", normal, 400, url("../../fonts/lato/Lato-Regular.woff2") format(woff2));
+@include font-face("Oswald", normal, 400, url("../../fonts/oswald/oswaldregular.woff2") format(woff2));

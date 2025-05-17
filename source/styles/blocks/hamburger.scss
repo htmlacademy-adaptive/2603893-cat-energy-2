@@ -1,0 +1,43 @@
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+
+  span {
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    margin-bottom: 6px;
+    transition: 0.5s all;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &--active {
+    width: 18px;
+    height: 18px;
+
+    span {
+      margin-bottom: -2px;
+
+      &:nth-child(2) {
+        transform: translateY(3px) rotate(-45deg);
+      }
+
+      &:nth-child(3) {
+        display: none;
+      }
+
+      &:nth-child(4) {
+        transform: translateY(3px) rotate(45deg);
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.main-nav {
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  background-color: #ffffff;
+
+  &--active {
+    position: relative;
+    /* top: 65px; */
+    top: 0;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    width: 436px;
+    margin-left: auto;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 476px;
+    z-index: 5;
+    background-color: transparent;
+  }
+}

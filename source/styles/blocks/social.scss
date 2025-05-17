@@ -1,0 +1,34 @@
+.social {
+  &__list {
+    display: flex;
+    gap: 24px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      margin-left: 35px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    min-height: 22px;
+    min-width: 28px;
+
+    &-icon {
+      fill: #666666;
+    }
+
+    &:hover &-icon {
+      fill: #68b738;
+    }
+
+    &:active &-icon {
+      fill: $bg-color-primary;
+      opacity: 0.3;
+    }
+  }
+}

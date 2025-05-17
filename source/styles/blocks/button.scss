@@ -1,0 +1,23 @@
+.button {
+  background-color: $bg-color-primary;
+  border: none;
+  font-family: inherit;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active &-text {
+    opacity: 0.3;
+  }
+
+  &:disabled {
+    opacity: 0.1;
+  }
+}

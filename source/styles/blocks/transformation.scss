@@ -1,0 +1,210 @@
+.transformation {
+  background-color: #eaeaea;
+  position: relative;
+  min-height: 659px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    min-height: 598px;
+    width: 100%;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 595px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to bottom, #ffffff 130px, #f2f2f2 130px, #f2f2f2 462px);
+  }
+
+  &__wrapper {
+    padding: 25px 20px 19px;
+
+    @media (min-width: $tablet-width) {
+      padding: 45px 30px 158px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px 75px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 47px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 146px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 19px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 55px;
+      line-height: 24px;
+      /* stylelint-disable */
+      br {
+        display: none;
+      }
+
+      /* stylelint-enable */
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 432px;
+      line-height: 24px;
+      margin-bottom: 69px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+
+    @media (min-width: $tablet-width) {
+      gap: 43px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      gap: 43px;
+      justify-content: flex-start;
+      margin-bottom: 55px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 99px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 0;
+    }
+  }
+
+  &__holder {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      width: 327px;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
+  &__info {
+    position: relative;
+    width: 124px;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      width: 162px;
+      border-radius: 4px;
+      padding: 16px 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 162px;
+      border-radius: 4px;
+      padding: 15px 0 20px;
+    }
+  }
+
+  &__example {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__result {
+    color: $secodary-text-color;
+    position: absolute;
+    font-family: $secondary-font;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    background-color: #eaeaea;
+    width: 77px;
+
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      width: 140px;
+      bottom: -5px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: #f2f2f2;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+    }
+
+    &--end {
+      align-self: center;
+
+      /* stylelint-disable */
+
+      @media (min-width: $tablet-width) {
+        align-self: flex-end;
+      }
+
+      @media (min-width: $desktop-width) {
+        align-self: center;
+      }
+
+      /* stylelint-enable */
+    }
+  }
+}

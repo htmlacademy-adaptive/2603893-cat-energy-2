@@ -1,0 +1,15 @@
+.main-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $primary-text-color;
+
+  &--additional {
+    line-height: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

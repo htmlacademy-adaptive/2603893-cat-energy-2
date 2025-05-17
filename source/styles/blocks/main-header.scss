@@ -1,0 +1,23 @@
+.main-header {
+  &__container {
+    padding: 16px 20px 12px;
+    display: flex;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 25px 30px;
+    min-height: 75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px 0;
+    background-color: transparent;
+    align-items: center;
+  }
+}
