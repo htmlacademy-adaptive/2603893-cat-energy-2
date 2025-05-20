@@ -28,14 +28,14 @@
             <img class="logo__text" src="images/logo-mobile-text.svg" alt="Текст логотипа" width="101" height="18">
           </picture>
         </a>
-        <div class="hamburger">
+        <div class="hamburger hamburger--no-js">
           <span class="visually-hidden">Открыть меню</span>
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--catalog" href="index.html">главная</a>
@@ -63,15 +63,15 @@
                 <ul class="programs-form__list">
                   <li class="programs-form__item">
                     <label class="programs-form__label" for="name">ИМЯ:*</label>
-                    <input class="programs-form__input" id="name" type="text" name="name" value="Барсик">
+                    <input class="programs-form__input" id="name" type="text" name="name" placeholder="Барсик" required>
                   </li>
                   <li class="programs-form__item">
                     <label class="programs-form__label" for="weight">Вес (кг):*</label>
-                    <input class="programs-form__input" id="weight" type="text" name="name" value="7">
+                    <input class="programs-form__input" id="weight" type="text" name="name" placeholder="7" required>
                   </li>
                   <li class="programs-form__item">
                     <label class="programs-form__label" for="age">Возраст (лет):</label>
-                    <input class="programs-form__input" id="age" type="text" name="name" value="7">
+                    <input class="programs-form__input" id="age" type="text" name="name" placeholder="7" required>
                   </li>
                 </ul>
               </div>
@@ -119,11 +119,11 @@
             <div class="contacts-form__container">
               <label class="contacts-form__label">
                 E-mail:*
-                <input class="contacts-form__input contacts-form__input--email" name="email" type="text" placeholder="kuklachev@gmail.com">
+                <input class="contacts-form__input contacts-form__input--email" name="email" type="text" placeholder="kuklachev@gmail.com" required>
               </label>
               <label class="contacts-form__label">
                 Телефон:*
-                <input class="contacts-form__input contacts-form__input--phone" name="phone" type="number" placeholder="8 (960) 900-60-90">
+                <input class="contacts-form__input contacts-form__input--phone" name="phone" type="text" placeholder="8 (960) 900-60-90" required>
               </label>
             </div>
           </div>
@@ -145,7 +145,7 @@
             <ul class="additional-form__list">
               <li class="additional-form__item">
                 <label class="additional-form__label">
-                  <input class="visually-hidden control-input-checkbox" type="checkbox" name="sugar" checked>
+                  <input class="visually-hidden control-input-checkbox" type="checkbox" name="sugar" checked required>
                   <span class="custom-checkbox">
                     <span class="custom-checkbox__checkmark"></span>
                   </span>

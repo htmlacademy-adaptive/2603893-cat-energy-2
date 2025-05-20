@@ -66,29 +66,30 @@
   &__item {
     @media (min-width: $tablet-width) {
       &:nth-child(2) {
-        margin-left: 123px;
+        margin-left: auto;
 
         @media (min-width: $desktop-width) {
-          margin-left: 104px;
+          margin-left: auto;
         }
       }
 
       &:nth-child(3) {
+        margin-left: auto;
+
         @media (min-width: $tablet-width) {
-          margin-left: 0;
+          margin-left: 40px;
         }
 
-
         @media (min-width: $desktop-width) {
-          margin-left: 136px;
+          margin-left: auto;
         }
       }
 
       &:nth-child(4) {
-        margin-left: 216px;
+        margin-left: auto;
 
         @media (min-width: $desktop-width) {
-          margin-left: 197px;
+          margin-left: auto;
         }
       }
     }

@@ -4,6 +4,11 @@ window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.main-nav'),
     hamburger = document.querySelector('.hamburger');
 
+  if (menu.classList.contains('main-nav--no-js') && hamburger.classList.contains('hamburger--no-js')) {
+    menu.classList.remove('main-nav--no-js');
+    hamburger.classList.remove('hamburger--no-js');
+  }
+
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger--active');
     menu.classList.toggle('main-nav--active');
