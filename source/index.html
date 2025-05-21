@@ -6,9 +6,13 @@
   <title>Кэт Энэрджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicons/icon.svg.svg" type="image/svg+xml">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -59,16 +63,11 @@
           </h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <!-- Для больших экранов (WebP) -->
-            <source media="(min-width:1220px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x" type="image/webp">
-            <source media="(min-width:1220px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" type="image/png">
-
-            <!-- Для планшета -->
-            <source media="(min-width:768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width:768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" type="image/png">
-
-            <!-- Мобильное оставьте PNG как резерв -->
-            <img class="promo__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png" width="280" height="270" alt="Банка Кэт Энерджи с курицей">
+            <source media="(min-width:1200px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x" width="552" height="499" type="image/webp">
+            <source media="(min-width:1200px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499" type="image/png">
+            <source media="(min-width:768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x" width="709" height="609" type="image/webp">
+            <source media="(min-width:768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609" type="image/png">
+            <img class="promo__img" width="280" height="270" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" alt="Картинка с банкой корма">
           </picture>
           <button class="promo__button button" type="button"><span class="button-text">подобрать программу</span></button>
         </div>
@@ -173,25 +172,29 @@
                 <li class="slider__image slider__image--before">
                   <picture>
                     <!-- WebP для больших экранов -->
-                    <source media="(min-width:1200px)" srcset="images/slidercat-before-tablet@1x.webp 1x, images/slidercat-before-tablet@2x.webp 2x" type="image/webp">
-                    <source media="(min-width:1200px)" srcset="images/slidercat-before-tablet@1x.png 1x, images/slidercat-before-tablet@2x.png 2x" type="image/png">
+                    <source media="(min-width:1200px)" srcset="images/slidercat-before-tablet@1x.webp 1x, images/slidercat-before-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width:1200px)" srcset="images/slidercat-before-tablet@1x.png 1x, images/slidercat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
 
-                    <source media="(min-width:768px)" srcset="images/slidercat-before-tablet@1x.webp 1x, images/slidercat-before-tablet@2x.webp 2x" type="image/webp">
-                    <source media="(min-width:768px)" srcset="images/slidercat-before-tablet@1x.png 1x, images/slidercat-before-tablet@2x.png 2x" type="image/png">
+                    <!-- Для меньших экранов -->
+                    <source media="(min-width:768px)" srcset="images/slidercat-before-tablet@1x.webp 1x, images/slidercat-before-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width:768px)" srcset="images/slidercat-before-tablet@1x.png 1x, images/slidercat-before-tablet@2x.png 2x" type="image/png" width="560" height="512">
 
-                    <!-- На мобильных оставить альтернатива PNG или JPEG по умолчанию -->
+                    <!-- Мобильное по умолчанию -->
                     <img class="slider__before" src="images/slidercat-before-mobile@1x.png" srcset="images/slidercat-before-mobile@2x.png" width="280" height="256" alt="Кот до приема cat Energy">
                   </picture>
                 </li>
-                <!-- то же для второй картинки -->
+
                 <li class="slider__image slider__image--after">
                   <picture>
-                    <source media="(min-width:1200px)" srcset="images/slidercat-after-tablet@1x.webp 1x, images/slidercat-after-tablet@2x.webp 2x" type="image/webp">
-                    <source media="(min-width:1200px)" srcset="images/slidercat-after-tablet@1x.png 1x, images/slidercat-after-tablet@2x.png 2x" type="image/png">
+                    <!-- WebP для больших экранов -->
+                    <source media="(min-width:1200px)" srcset="images/slidercat-after-tablet@1x.webp 1x, images/slidercat-after-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width:1200px)" srcset="images/slidercat-after-tablet@1x.png 1x, images/slidercat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
 
-                    <source media="(min-width:768px)" srcset="images/slidercat-after-tablet@1x.webp 1x, images/slidercat-after-tablet@2x.webp 2x" type="image/webp">
-                    <source media="(min-width:768px)" srcset="images/slidercat-after-tablet@1x.png 1x, images/slidercat-after-tablet@2x.png 2x" type="image/png">
+                    <!-- Для меньших экранов -->
+                    <source media="(min-width:768px)" srcset="images/slidercat-after-tablet@1x.webp 1x, images/slidercat-after-tablet@2x.webp 2x" type="image/webp" width="560" height="512">
+                    <source media="(min-width:768px)" srcset="images/slidercat-after-tablet@1x.png 1x, images/slidercat-after-tablet@2x.png 2x" type="image/png" width="560" height="512">
 
+                    <!-- Мобильное -->
                     <img class="slider__after" src="images/slidercat-after-mobile@1x.png" srcset="images/slidercat-after-mobile@2x.png" width="280" height="256" alt="Кот после приема cat Energy">
                   </picture>
                 </li>
