@@ -10,7 +10,7 @@
     opacity: 0.6;
   }
 
-  &__text {
+  .logo__text {
     margin-left: 54px;
 
     @media (min-width: $tablet-width) {
@@ -22,7 +22,7 @@
     }
   }
 
-  &__pic {
+  .logo__pic {
     display: flex;
   }
 }

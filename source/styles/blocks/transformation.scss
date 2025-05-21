@@ -11,15 +11,24 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 595px;
     width: 100vw;
-    position: relative;
     left: 50%;
     transform: translateX(-50%);
+    min-height: 595px;
     background: linear-gradient(to bottom, #ffffff 130px, #f2f2f2 130px, #f2f2f2 462px);
   }
 
-  &__wrapper {
+  .transformation__grade {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1440px;
+      justify-content: space-between;
+      padding: 0 110px 75px;
+    }
+  }
+
+  .transformation__wrapper {
     padding: 25px 20px 19px;
 
     @media (min-width: $tablet-width) {
@@ -27,13 +36,11 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 110px 75px;
-      max-width: 1440px;
-      margin: 0 auto;
+      padding: 0;
     }
   }
 
-  &__title {
+  .transformation__title {
     margin-bottom: 47px;
 
     @media (min-width: $tablet-width) {
@@ -45,7 +52,7 @@
     }
   }
 
-  &__description {
+  .transformation__description {
     margin-bottom: 19px;
 
     @media (min-width: $tablet-width) {
@@ -66,7 +73,7 @@
     }
   }
 
-  &__container {
+  .transformation__container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
@@ -83,7 +90,7 @@
     }
   }
 
-  &__block {
+  .transformation__block {
     margin-bottom: 0;
 
     @media (min-width: $tablet-width) {
@@ -101,7 +108,7 @@
     }
   }
 
-  &__holder {
+  .transformation__holder {
     display: flex;
     justify-content: center;
 
@@ -118,7 +125,7 @@
     }
   }
 
-  &__info {
+  .transformation__info {
     position: relative;
     width: 124px;
     padding: 15px;
@@ -138,7 +145,7 @@
     }
   }
 
-  &__example {
+  .transformation__example {
     display: block;
     text-align: center;
     font-size: 24px;
@@ -151,10 +158,10 @@
     }
   }
 
-  &__result {
+  .transformation__result {
     color: $secodary-text-color;
     position: absolute;
-    font-family: $secondary-font;
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -177,7 +184,7 @@
     }
   }
 
-  &__text {
+  .transformation__text {
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
@@ -190,21 +197,17 @@
     @media (min-width: $tablet-width) {
       font-size: 20px;
     }
+  }
 
-    &--end {
+  .transformation__text--end {
+    align-self: center;
+
+    @media (min-width: $tablet-width) {
+      align-self: flex-end;
+    }
+
+    @media (min-width: $desktop-width) {
       align-self: center;
-
-      /* stylelint-disable */
-
-      @media (min-width: $tablet-width) {
-        align-self: flex-end;
-      }
-
-      @media (min-width: $desktop-width) {
-        align-self: center;
-      }
-
-      /* stylelint-enable */
     }
   }
 }

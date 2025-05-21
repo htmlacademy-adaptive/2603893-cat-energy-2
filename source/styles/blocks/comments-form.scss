@@ -25,7 +25,7 @@
     }
   }
 
-  &__wrapper {
+  .comments-form__wrapper {
     padding: 63px 20px 15px;
 
     @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
     }
   }
 
-  &__title {
+  .comments-form__title {
     font-size: 24px;
     font-weight: 400;
     line-height: 26px;
@@ -61,7 +61,7 @@
     }
   }
 
-  &__textarea {
+  .comments-form__textarea {
     font-family: inherit;
     font-size: 16px;
     font-weight: 400;

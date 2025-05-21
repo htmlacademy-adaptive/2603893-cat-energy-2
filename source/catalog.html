@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Кэт Энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicons/icon.svg.svg" type="image/svg+xml">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
@@ -62,9 +62,16 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="161" height="172" type="image/jpeg" srcset="images/card-chicken-500-desktop@1x.webp 1x, images/card-chicken-500-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="161" height="172" type="image/jpeg" srcset="images/card-chicken-500-tablet@1x.webp 1x, images/card-chicken-500-tablet@2x.webp 2x">
-                  <img class="catalog-list__img" src="images/card-chicken-500-mobile@1x.webp" srcset="images/card-chicken-500-mobile@2x.webp 2x" alt="Банка с курицей 500 грамм" width="68" height="86">
+                  <!-- Для десктопов (минимум 1220px) -->
+                  <source media="(min-width:1220px)" srcset="images/card-chicken-500-desktop@1x.webp 1x, images/card-chicken-500-desktop@2x.webp 2x" type="image/webp" width="172" height="196">
+                  <source media="(min-width:1220px)" srcset="images/card-chicken-500-desktop@1x.png 1x, images/card-chicken-500-desktop@2x.png 2x" type="image/png" width="172" height="196">
+
+                  <!-- Для планшетов (от 768px до 1219px) -->
+                  <source media="(min-width:768px)" srcset="images/card-chicken-500-tablet@1x.webp 1x, images/card-chicken-500-tablet@2x.webp 2x" type="image/webp" width="168" height="206">
+                  <source media="(min-width:768px)" srcset="images/card-chicken-500-tablet@1x.png 1x, images/card-chicken-500-tablet@2x.png 2x" type="image/png" width="168" height="206">
+
+                  <!-- Для мобильных -->
+                  <img class="catalog-list__img" src="images/card-chicken-500-mobile@1x.png" srcset="images/card-chicken-500-mobile@2x.png" width="84" height="100" alt="Банка с курицей 500 грамм">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -87,9 +94,13 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="172" height="196" type="image/jpeg" srcset="images/card-chicken-1000-desktop@1x.webp 1x, images/card-chicken-1000-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="168" height="206" type="image/jpeg" srcset="images/card-chicken-1000-tablet@1x.webp 1x, images/card-chicken-1000-tablet@2x.webp 2x">
-                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-chicken-1000-mobile@1x.webp" srcset="images/card-chicken-1000-mobile@2x.webp 2x" alt="Банка с курицей 1000 грамм" width="84" height="100">
+                  <source media="(min-width:1220px)" srcset="images/card-chicken-1000-desktop@1x.webp 1x, images/card-chicken-1000-desktop@2x.webp 2x" type="image/webp" width="172" height="196">
+                  <source media="(min-width:1220px)" srcset="images/card-chicken-1000-desktop@1x.png 1x, images/card-chicken-1000-desktop@2x.png 2x" type="image/png" width="172" height="196">
+
+                  <source media="(min-width:708px)" srcset="images/card-chicken-1000-tablet@1x.webp 1x, images/card-chicken-1000-tablet@2x.webp 2x" type="image/webp" width="168" height="206">
+                  <source media="(min-width:708px)" srcset="images/card-chicken-1000-tablet@1x.png 1x, images/card-chicken-1000-tablet@2x.png 2x" type="image/png" width="168" height="206">
+
+                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-chicken-1000-mobile@1x.png" srcset="images/card-chicken-1000-mobile@2x.png" width="84" height="100" alt="Банка с курицей 1000 грамм">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -112,9 +123,12 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="161" height="172" type="image/jpeg" srcset="images/card-fish-500-desktop@1x.webp 1x, images/card-fish-500-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="161" height="172" type="image/jpeg" srcset="images/card-fish-500-tablet@1x.webp 1x, images/card-fish-500-tablet@2x.webp 2x">
-                  <img class="catalog-list__img" src="images/card-fish-500-mobile@1x.webp" srcset="images/card-fish-500-mobile@2x.webp 2x" alt="Банка с рыбой 500 грамм" width="68" height="86">
+                  <source media="(min-width:1220px)" width="161" height="172" type="image/webp" srcset="images/card-fish-500-desktop@1x.webp 1x, images/card-fish-500-desktop@2x.webp 2x">
+                  <source media="(min-width:1220px)" width="161" height="172" type="image/png" srcset="images/card-fish-500-desktop@1x.png 1x, images/card-fish-500-desktop@2x.png 2x">
+
+                  <source media="(min-width:708px)" width="161" height="172" type="image/webp" srcset="images/card-fish-500-tablet@1x.webp 1x, images/card-fish-500-tablet@2x.webp 2x">
+                  <source media="(min-width:708px)" width="161" height="172" type="image/png" srcset="images/card-fish-500-tablet@1x.png 1x, images/card-fish-500-tablet@2x.png 2x">
+                  <img class="catalog-list__img" src="images/card-fish-500-mobile@1x.png" srcset="images/card-fish-500-mobile@2x.png 2x" alt="Банка с рыбой 500 грамм" width="68" height="86">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -137,9 +151,13 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="172" height="196" type="image/jpeg" srcset="images/card-fish-1000-desktop@1x.webp 1x, images/card-fish-1000-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="168" height="206" type="image/jpeg" srcset="images/card-fish-1000-tablet@1x.webp 1x, images/card-fish-1000-tablet@2x.webp 2x">
-                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-fish-1000-mobile@1x.webp" srcset="images/card-fish-1000-mobile@2x.webp 2x" alt="Банка с рыбой 1000 грамм" width="84" height="100">
+                  <source media="(min-width:1220px)" width="172" height="196" type="image/webp" srcset="images/card-fish-1000-desktop@1x.webp 1x, images/card-fish-1000-desktop@2x.webp 2x">
+                  <source media="(min-width:1220px)" width="172" height="196" type="image/png" srcset="images/card-fish-1000-desktop@1x.png 1x, images/card-fish-1000-desktop@2x.png 2x">
+
+                  <source media="(min-width:708px)" width="168" height="206" type="image/webp" srcset="images/card-fish-1000-tablet@1x.webp 1x, images/card-fish-1000-tablet@2x.webp 2x">
+                  <source media="(min-width:708px)" width="168" height="206" type="image/png" srcset="images/card-fish-1000-tablet@1x.png 1x, images/card-fish-1000-tablet@2x.png 2x">
+
+                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-fish-1000-mobile@1x.png" srcset="images/card-fish-1000-mobile@2x.png 2x" alt="Банка с рыбой 1000 грамм" width="84" height="100">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -162,9 +180,13 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1200px)" width="161" height="172" type="image/jpeg" srcset="images/card-buckwheat-500-desktop@1x.webp 1x, images/card-buckwheat-500-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="161" height="172" type="image/jpeg" srcset="images/card-buckwheat-500-tablet@1x.webp 1x, images/card-buckwheat-500-tablet@2x.webp 2x">
-                  <img class="catalog-list__img" src="images/card-buckwheat-500-mobile@1x.webp" srcset="images/card-buckwheat-500-mobile@2x.webp 2x" alt="Банка с гречкой 500 грамм" width="68" height="86">
+                  <source media="(min-width:1200px)" width="161" height="172" type="image/webp" srcset="images/card-buckwheat-500-desktop@1x.webp 1x, images/card-buckwheat-500-desktop@2x.webp 2x">
+                  <source media="(min-width:1200px)" width="161" height="172" type="image/png" srcset="images/card-buckwheat-500-desktop@1x.png 1x, images/card-buckwheat-500-desktop@2x.png 2x">
+
+                  <source media="(min-width:708px)" width="161" height="172" type="image/webp" srcset="images/card-buckwheat-500-tablet@1x.webp 1x, images/card-buckwheat-500-tablet@2x.webp 2x">
+                  <source media="(min-width:708px)" width="161" height="172" type="image/png" srcset="images/card-buckwheat-500-tablet@1x.png 1x, images/card-buckwheat-500-tablet@2x.png 2x">
+
+                  <img class="catalog-list__img" src="images/card-buckwheat-500-mobile@1x.png" srcset="images/card-buckwheat-500-mobile@2x.png 2x" alt="Банка с гречкой 500 грамм" width="68" height="86">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -187,9 +209,13 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="172" height="196" type="image/jpeg" srcset="images/card-buckwheat-1000-desktop@1x.webp 1x, images/card-buckwheat-1000-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="168" height="206" type="image/jpeg" srcset="images/card-buckwheat-1000-tablet@1x.webp 1x, images/card-buckwheat-1000-tablet@2x.webp 2x">
-                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-buckwheat-1000-mobile@1x.webp" srcset="images/card-buckwheat-1000-mobile@2x.webp 2x" alt="Банка с гречкой 1000 грамм" width="84" height="100">
+                  <source media="(min-width:1220px)" width="172" height="196" type="image/webp" srcset="images/card-buckwheat-1000-desktop@1x.webp 1x, images/card-buckwheat-1000-desktop@2x.webp 2x">
+                  <source media="(min-width:1220px)" width="172" height="196" type="image/png" srcset="images/card-buckwheat-1000-desktop@1x.png 1x, images/card-buckwheat-1000-desktop@2x.png 2x">
+
+                  <source media="(min-width:708px)" width="168" height="206" type="image/webp" srcset="images/card-buckwheat-1000-tablet@1x.webp 1x, images/card-buckwheat-1000-tablet@2x.webp 2x">
+                  <source media="(min-width:708px)" width="168" height="206" type="image/png" srcset="images/card-buckwheat-1000-tablet@1x.png 1x, images/card-buckwheat-1000-tablet@2x.png 2x">
+
+                  <img class="catalog-list__img catalog-list__img--1000" src="images/card-buckwheat-1000-mobile@1x.png" srcset="images/card-buckwheat-1000-mobile@2x.png 2x" alt="Банка с гречкой 1000 грамм" width="84" height="100">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -212,9 +238,13 @@
             <li class="catalog-list__item">
               <a href="#">
                 <picture>
-                  <source media="(min-width:1220px)" width="161" height="172" type="image/jpeg" srcset="images/card-rise-500-desktop@1x.webp 1x, images/card-rise-500-desktop@2x.webp 2x">
-                  <source media="(min-width:708px)" width="161" height="172" type="image/jpeg" srcset="images/card-rise-500-tablet@1x.webp 1x, images/card-rise-500-tablet@2x.webp 2x">
-                  <img class="catalog-list__img" src="images/card-rise-500-mobile@1x.webp" srcset="images/card-rise-500-mobile@2x.webp 2x" alt="Банка с рисом 500 грамм" width="68" height="86">
+                  <source media="(min-width:1220px)" width="161" height="172" type="image/webp" srcset="images/card-rise-500-desktop@1x.webp 1x, images/card-rise-500-desktop@2x.webp 2x">
+                  <source media="(min-width:1220px)" width="161" height="172" type="image/png" srcset="images/card-rise-500-desktop@1x.png 1x, images/card-rise-500-desktop@2x.png 2x">
+
+                  <source media="(min-width:708px)" width="161" height="172" type="image/webp" srcset="images/card-rise-500-tablet@1x.webp 1x, images/card-rise-500-tablet@2x.webp 2x">
+                  <source media="(min-width:708px)" width="161" height="172" type="image/png" srcset="images/card-rise-500-tablet@1x.png 1x, images/card-rise-500-tablet@2x.png 2x">
+
+                  <img class="catalog-list__img" src="images/card-rise-500-mobile@1x.png" srcset="images/card-rise-500-mobile@2x.png 2x" alt="Банка с рисом 500 грамм" width="68" height="86">
                 </picture>
               </a>
               <div class="catalog-list__container">
@@ -303,7 +333,7 @@
             <h3 class="form__title">Подпишитесь на наши новости и не пропустите ни одного предложения!</h3>
             <label class="visually-hidden" for="form-input">Email</label>
             <div class="form__container">
-              <input class="form__input" id="form-input" type="text" name="email" placeholder="кuklachev@gmail.com">
+              <input class="form__input" id="form-input" type="email" name="email" placeholder="кuklachev@gmail.com" required>
               <button class="form__button button" type="submit"><span class="button-text">Подписаться</span></button>
             </div>
           </form>
@@ -313,11 +343,11 @@
       <section class="main-container__map map" data-test="contacts">
         <h2 class="visually-hidden">Карта</h2>
         <div class="map__wrapper">
-          <div class="map__adress adress adress--gray">
-            <span class="adress__text">приглашаем <br> к сотрудничеству дилеров!</span>
-            <div class="adress__info">
-              <span class="adress__description basic-description">ул. Большая Конюшенная, д. 19/8</span>
-              <span class="adress__city">Санкт-Петербург</span>
+          <div class="map__address address address--gray">
+            <span class="address__text">приглашаем <br> к сотрудничеству дилеров!</span>
+            <div class="address__info">
+              <span class="address__description basic-description">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="address__city">Санкт-Петербург</span>
             </div>
           </div>
           <div class="map__field" id="map" style="width:100%;"></div>
@@ -359,10 +389,10 @@
             </li>
           </ul>
         </div>
-        <div class="main-footer__autor autor">
-          <a class="autor__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="autor__link-text">HTML Academy</span>
-            <svg class="autor__link-img" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
+        <div class="main-footer__author author">
+          <a class="author__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="author__link-text">HTML Academy</span>
+            <svg class="author__link-img" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" />
             </svg>
           </a>

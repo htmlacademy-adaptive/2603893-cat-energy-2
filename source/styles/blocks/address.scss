@@ -1,4 +1,4 @@
-.adress {
+.address {
   background-color: #ffffff;
   padding: 26px 20px;
   display: flex;
@@ -19,7 +19,7 @@
     z-index: 2;
   }
 
-  &__text {
+  .address__text {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -32,8 +32,8 @@
     }
   }
 
-  &__description {
-    font-family: $secondary-font;
+  .address__description {
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
     line-height: 20px;
     width: 140px;
     text-align: left;
@@ -48,21 +48,19 @@
     }
   }
 
-  &__info {
+  .address__info {
     color: $secodary-text-color;
     display: flex;
     flex-direction: column;
   }
 
-  &__city {
+  .address__city {
     margin-top: 0;
     text-align: left;
-    font-family: $secondary-font;
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
-
-    /* stylelint-disable */
 
     @media (min-width: $tablet-width) {
       margin-top: 20px;
@@ -73,8 +71,6 @@
     @media (min-width: $desktop-width) {
       text-align: left;
     }
-
-    /* stylelint-enable */
   }
 
   &--gray {

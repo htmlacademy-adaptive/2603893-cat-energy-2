@@ -13,7 +13,7 @@
     margin-right: 20px;
   }
 
-  &__checkmark {
+  .custom-checkbox__checkmark {
     display: none;
     width: 18px;
     height: 14px;
@@ -28,6 +28,6 @@
   }
 }
 
-.additional-form__label input:checked + .custom-checkbox .custom-checkbox__checkmark {
-  display: block;
+.control-input-checkbox:focus + .custom-checkbox {
+  outline: 2px solid $bg-color-primary;
 }

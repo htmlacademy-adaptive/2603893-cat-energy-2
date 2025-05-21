@@ -1,14 +1,8 @@
 .promo {
-  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-mobile@1x.webp");
+  background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), image-set(url("../../images/main-bg-mobile@1x.webp") 1x, url("../../images/main-bg-mobile@2x.webp") 2x);
   background-repeat: no-repeat;
   background-size: 100% 302px, 320px 302px;
   background-position: 0 0, 50% 0;
-
-  @media (min-resolution: 2dppx) {
-    background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-mobile@2x.webp");
-    background-repeat: no-repeat;
-    background-size: 100% 302px, 100% 302px;
-  }
 
   @media (min-width: $tablet-width) {
     background: #ffffff;
@@ -21,7 +15,12 @@
     &::after {
       content: "";
       z-index: 2;
-      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-desktop@1x.webp");
+      background:
+        linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%),
+        image-set(
+          url("../../images/main-bg-desktop@1x.webp") 1x,
+          url("../../images/main-bg-desktop@2x.webp") 2x
+        );
       background-size: cover, 1040px 100%;
       background-position: 100%, 0%;
       background-repeat: no-repeat;
@@ -30,23 +29,10 @@
       position: absolute;
       right: 0;
       top: 0;
-      /* stylelint-disable */
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../../images/main-bg-desktop@2x.webp");
-        background-size: cover, 1040px 100%;
-        background-position: 100%, 0%;
-        background-repeat: no-repeat;
-        width: 50vw;
-        height: 694px;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      /* stylelint-enable */
     }
   }
 
-  &__wrapper {
+  .promo__wrapper {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -64,7 +50,7 @@
     }
   }
 
-  &__img {
+  .promo__img {
     position: absolute;
     top: 167px;
     left: 50%;
@@ -84,7 +70,7 @@
     }
   }
 
-  &__title {
+  .promo__title {
     color: #ffffff;
     text-align: center;
     margin-bottom: 25px;
@@ -94,6 +80,7 @@
       text-align: left;
       margin-bottom: 40px;
       width: 416px;
+      z-index: 4;
     }
 
     @media (min-width: $desktop-width) {
@@ -102,7 +89,7 @@
     }
   }
 
-  &__slogan {
+  .promo__slogan {
     color: #ffffff;
     font-size: 14px;
     line-height: 14px;
@@ -123,7 +110,7 @@
     }
   }
 
-  &__button {
+  .promo__button {
     width: 100%;
     padding: 10px 0;
     margin-top: auto;
@@ -136,6 +123,7 @@
       font-size: 20px;
       line-height: 26px;
       text-transform: uppercase;
+      margin-bottom: 20px;
     }
   }
 }

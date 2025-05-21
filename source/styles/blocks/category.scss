@@ -1,5 +1,5 @@
 .category {
-  &__wrapper {
+  .category__wrapper {
     padding: 20px;
     min-height: 592px;
 
@@ -13,7 +13,7 @@
     }
   }
 
-  &__list {
+  .category__list {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -30,7 +30,7 @@
     }
   }
 
-  &__item {
+  .category__item {
     padding: 30px 33px 18px 20px;
     background-color: #f2f2f2;
     position: relative;
@@ -42,71 +42,64 @@
     @media (min-width: $desktop-width) {
       padding: 75px 61px 55px 52px;
     }
+  }
 
-    &--slim::before {
-      content: "";
-      background-image: url("../../icons/stack.svg#catslim");
-      position: absolute;
-      top: 21px;
-      left: 20px;
-      width: 50px;
-      height: 53px;
+  .category__item--slim::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#catslim");
+    position: absolute;
+    top: 21px;
+    left: 20px;
+    width: 50px;
+    height: 53px;
 
-
-      /* stylelint-disable */
-      @media (min-width: $tablet-width) {
-        top: 50%;
-        transform: translateY(-50%);
-        left: auto;
-        right: 63px;
-        width: 200px;
-        height: 211px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 99px;
-        left: 51px;
-        right: auto;
-        width: 100px;
-        height: 106px;
-      }
-
-      /* stylelint-enable */
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 211px;
     }
 
-    &--gain::before {
-      content: "";
-      background-image: url("../../icons/stack.svg#catgain");
-      position: absolute;
-      top: 24px;
-      left: 13px;
-      width: 67px;
-      height: 50px;
-
-      /* stylelint-disable */
-
-      @media (min-width: $tablet-width) {
-        top: 53%;
-        transform: translateY(-50%);
-        left: auto;
-        right: 29px;
-        width: 268px;
-        height: 200px;
-      }
-
-      @media (min-width: $desktop-width) {
-        top: 101px;
-        left: 35px;
-        right: auto;
-        width: 134px;
-        height: 100px;
-      }
-
-      /* stylelint-enable */
+    @media (min-width: $desktop-width) {
+      top: 99px;
+      left: 51px;
+      right: auto;
+      width: 100px;
+      height: 106px;
     }
   }
 
-  &__title {
+  .category__item--gain::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#catgain");
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 67px;
+    height: 50px;
+
+
+    @media (min-width: $tablet-width) {
+      top: 53%;
+      transform: translateY(-50%);
+      left: auto;
+      right: 29px;
+      width: 268px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 101px;
+      left: 35px;
+      right: auto;
+      width: 134px;
+      height: 100px;
+    }
+  }
+
+  .category__title {
     margin-left: 70px;
     margin-bottom: 29px;
     font-size: 24px;
@@ -127,7 +120,7 @@
     }
   }
 
-  &__description {
+  .category__description {
     line-height: 18px;
     margin-bottom: 38px;
 
@@ -144,7 +137,7 @@
     }
   }
 
-  &__link {
+  .category__link {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
@@ -161,31 +154,29 @@
       opacity: 0.3;
     }
 
-    &::after {
-      content: "";
-      display: block;
-      background-image: url("../../icons/stack.svg#arrow");
-      width: 24px;
-      height: 12px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -40px;
-      /* stylelint-disable */
-      @media (min-width: $tablet-width) {
-        right: -49px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: -55px;
-      }
-
-      /* stylelint-enable */
-    }
-
     @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: normal;
+    }
+  }
+
+  .category__link::after {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#arrow");
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -40px;
+
+    @media (min-width: $tablet-width) {
+      right: -49px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: -55px;
     }
   }
 }
