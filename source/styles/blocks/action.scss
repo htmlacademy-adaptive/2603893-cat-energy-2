@@ -22,7 +22,7 @@
     }
   }
 
-  &__wrapper {
+  .action__wrapper {
     padding: 58px 20px 40px;
 
     @media (min-width: $tablet-width) {
@@ -34,7 +34,7 @@
     }
   }
 
-  &__title {
+  .action__title {
     position: absolute;
     top: 0;
     z-index: 3;

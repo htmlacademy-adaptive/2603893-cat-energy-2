@@ -17,7 +17,7 @@
     margin-right: 19px;
   }
 
-  &__checkmark {
+  .custom-radio__checkmark {
     width: 13px;
     height: 13px;
     border-radius: 13px;
@@ -31,6 +31,6 @@
   }
 }
 
-.programs-form__label input:checked + .custom-radio .custom-radio__checkmark {
-  display: block;
+.control-input-radio:focus + .custom-radio {
+  outline: 2px solid $bg-color-primary;
 }

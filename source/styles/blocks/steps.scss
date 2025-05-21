@@ -1,5 +1,5 @@
 .steps {
-  &__wrapper {
+  .steps__wrapper {
     padding: 0 20px 49px;
 
     @media (min-width: $tablet-width) {
@@ -13,7 +13,7 @@
     }
   }
 
-  &__list {
+  .steps__list {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
     }
   }
 
-  &__item {
+  .steps__item {
     padding-left: 80px;
 
     @media (min-width: $tablet-width) {
@@ -40,100 +40,97 @@
     @media (min-width: $desktop-width) {
       padding: 151px 0 57px;
     }
+  }
 
-    &--leaf::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/stack.svg#iconleaf");
-      width: 60px;
-      height: 60px;
+  .steps__item--leaf::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#iconleaf");
+    width: 60px;
+    height: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 47px;
       left: 0;
-
-      /* stylelint-disable */
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 80px;
-        top: 47px;
-        left: 0;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 80px;
-        height: 80px;
-        top: 45px;
-      }
-
-
     }
 
-    &--powder::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/stack.svg#iconpowder");
-      width: 60px;
-      height: 60px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 80px;
-        top: 47px;
-        left: 0;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 80px;
-        height: 80px;
-        top: 45px;
-      }
-    }
-
-    &--food::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/stack.svg#iconfood");
-      width: 60px;
-      height: 60px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 80px;
-        top: 40px;
-        left: 0;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 80px;
-        height: 80px;
-        top: 45px;
-      }
-    }
-
-    &--time::before {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/stack.svg#icontime");
-      width: 60px;
-      height: 60px;
-      left: 0;
-
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 80px;
-        top: 38px;
-        left: 0;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 80px;
-        height: 80px;
-        top: 45px;
-      }
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      top: 45px;
     }
   }
 
-  &__title {
+  .steps__item--powder::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#iconpowder");
+    width: 60px;
+    height: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 47px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      top: 45px;
+    }
+  }
+
+  .steps__item--food::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#iconfood");
+    width: 60px;
+    height: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      top: 45px;
+    }
+  }
+
+  .steps__item--time::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#icontime");
+    width: 60px;
+    height: 60px;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 38px;
+      left: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 80px;
+      top: 45px;
+    }
+  }
+
+  .steps__title {
     margin-bottom: 42px;
 
     @media (min-width: $tablet-width) {
@@ -141,7 +138,7 @@
     }
   }
 
-  &__description {
+  .steps__description {
     margin-top: 3px;
 
     @media (min-width: $tablet-width) {
@@ -150,7 +147,7 @@
     }
   }
 
-  &__number {
+  .steps__number {
     display: none;
 
     @media (min-width: $tablet-width) {
@@ -167,17 +164,15 @@
     @media (min-width: $desktop-width) {
       right: 0;
     }
+  }
 
-    &--first {
-      @media (min-width: $tablet-width) {
-        right: 43px;
-      }
-
-      @media (min-width: $desktop-width) {
-        right: 18px;
-      }
+  .steps__number--first {
+    @media (min-width: $tablet-width) {
+      right: 43px;
     }
 
-    /* stylelint-enable */
+    @media (min-width: $desktop-width) {
+      right: 18px;
+    }
   }
 }

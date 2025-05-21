@@ -1,11 +1,7 @@
 .form {
   padding: 0;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 38px;
-  }
-
-  &__container {
+  .form__container {
     display: block;
 
     @media (min-width: $tablet-width) {
@@ -17,7 +13,7 @@
     }
   }
 
-  &__title {
+  .form__title {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -30,11 +26,11 @@
     }
   }
 
-  &__input {
+  .form__input {
     margin-bottom: 16px;
     width: 100%;
     padding: 13px;
-    font-family: $primary-font;
+    font-family: $primary-font, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
@@ -51,7 +47,7 @@
     }
   }
 
-  &__button {
+  .form__button {
     padding: 15px 0;
     width: 100%;
     font-size: 20px;

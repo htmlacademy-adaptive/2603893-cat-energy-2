@@ -25,7 +25,7 @@
     }
   }
 
-  &__wrapper {
+  .additional-form__wrapper {
     padding: 63px 20px 32px;
 
     @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
     }
   }
 
-  &__list {
+  .additional-form__list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
@@ -63,7 +63,15 @@
     }
   }
 
-  &__item {
+  .additional-form__item {
+    @media (min-width: $tablet-width) {
+      flex-basis: 50%;
+    }
+
+    @media (min-width: $desktop-width) {
+      flex-basis: 25%;
+    }
+
     @media (min-width: $tablet-width) {
       &:nth-child(2) {
         margin-left: auto;
@@ -77,7 +85,7 @@
         margin-left: auto;
 
         @media (min-width: $tablet-width) {
-          margin-left: 40px;
+          margin-left: 0;
         }
 
         @media (min-width: $desktop-width) {
@@ -95,12 +103,12 @@
     }
   }
 
-  &__label {
+  .additional-form__label {
     display: flex;
     align-items: center;
   }
 
-  &__title {
+  .additional-form__title {
     position: absolute;
     z-index: 2;
     width: 161px;
@@ -123,7 +131,7 @@
     }
   }
 
-  &__container {
+  .additional-form__container {
     display: block;
 
     @media (min-width: $tablet-width) {
@@ -132,10 +140,10 @@
     }
   }
 
-  &__required {
+  .additional-form__required {
     display: block;
     text-align: center;
-    font-family: $secondary-font;
+    font-family: $secondary-font, Arial, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
@@ -151,7 +159,7 @@
     }
   }
 
-  &__button {
+  .additional-form__button {
     width: 100%;
     margin-bottom: 21px;
 
@@ -168,4 +176,8 @@
       width: 570px;
     }
   }
+}
+
+.additional-form__label input:checked + .custom-checkbox .custom-checkbox__checkmark {
+  display: block;
 }

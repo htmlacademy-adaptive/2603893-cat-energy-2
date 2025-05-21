@@ -8,14 +8,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    padding: 0;
     background-color: transparent;
-    max-width: 1440px;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    top: 232px;
+    width: 560px;
 
     &::before {
       display: none;
@@ -36,9 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     top: 0;
-    right: 110px;
     margin: 0;
   }
 }

@@ -21,7 +21,7 @@
     }
   }
 
-  &__wrapper {
+  .additional__wrapper {
     padding: 87px 20px 40px;
 
     @media (min-width: $tablet-width) {
@@ -33,13 +33,13 @@
     }
   }
 
-  &__container {
+  .additional__container {
     @media (min-width: $desktop-width) {
       display: flex;
     }
   }
 
-  &__block {
+  .additional__block {
     margin-bottom: 40px;
 
     @media (min-width: $tablet-width) {
@@ -52,7 +52,7 @@
     }
   }
 
-  &__gift {
+  .additional__gift {
     position: relative;
     padding: 186px 61px 43px 58px;
     background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-mobile@1x.webp");
@@ -68,83 +68,75 @@
 
     @media (min-width: $tablet-width) {
       padding: 71px 125px 69px 0;
-      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-tablet@1x.webp");
+      background:
+        linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%),
+        image-set(
+          url("../../images/gift-bg-tablet@1x.webp") 1x,
+          url("../../images/gift-bg-tablet@2x.webp") 2x
+        );
       background-repeat: no-repeat;
       margin-left: 0;
-      /* stylelint-disable */
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-tablet@2x.webp");
-        background-repeat: no-repeat;
-      }
     }
 
     @media (min-width: $desktop-width) {
       padding: 185px 20px 20px;
-      background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-desktop@1x.webp");
+      background:
+        linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%),
+        image-set(
+          url("../../images/gift-bg-desktop@1x.webp") 1x,
+          url("../../images/gift-bg-desktop@2x.webp") 2x
+        );
       background-repeat: no-repeat;
       width: 245px;
       margin-left: 80px;
-
-      @media (min-resolution: 2dppx) {
-        background: linear-gradient(0deg, rgba(104, 183, 56, 0.85) 20%, rgba(104, 183, 56, 0.85) 80%), url("../../images/gift-bg-desktop@2x.webp");
-        background-repeat: no-repeat;
-      }
-
-      /* stylelint-enable */
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../../icons/stack.svg#icongift");
-      width: 78px;
-      height: 80px;
-      top: 58px;
-      left: 50%;
-      transform: translateX(-50%);
-
-      /* stylelint-disable */
-
-      @media (min-width: $tablet-width) {
-        width: 80px;
-        height: 82px;
-        left: 119px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 80px;
-        height: 82px;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 56px;
-      }
-
-      /* stylelint-enable */
-    }
-
-    &-description {
-      text-align: center;
-      font-family: $secondary-font;
-      font-size: 16px;
-      line-height: 20px;
-      color: #ffffff;
-
-      /* stylelint-disable */
-      @media (min-width: $tablet-width) {
-        display: flex;
-        text-align: left;
-        justify-content: end;
-      }
-
-      @media (min-width: $desktop-width) {
-        display: block;
-        text-align: center;
-      }
-      /* stylelint-enable */
     }
   }
 
-  &__title {
+  .additional__gift::after {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#icongift");
+    width: 78px;
+    height: 80px;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 82px;
+      left: 119px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 80px;
+      height: 82px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 56px;
+    }
+  }
+
+  .additional__gift-description {
+    text-align: center;
+    font-family: $secondary-font, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      text-align: left;
+      justify-content: end;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .additional__title {
     font-size: 24px;
     font-weight: 400;
     line-height: 24px;
