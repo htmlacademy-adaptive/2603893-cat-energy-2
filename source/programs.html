@@ -9,6 +9,10 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff" type="font/woff" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -53,6 +57,7 @@
     <main class="main-container">
 
       <h2 class="visually-hidden">Форма для кота</h2>
+      <!-- "для вызова ошибки добавьте класс form-error на инпут" -->
       <form class="main-container__form form" action="#">
         <div class="form programs-form">
           <div class="programs-form__wrapper">
@@ -113,7 +118,7 @@
         </div>
         <div class="form contacts-form">
           <div class="contacts-form__wrapper">
-            <h2 class="contacts-form__title">Контактные данные <br>
+            <h2 class="contacts-form__title">Контактные данные <br class="contacts-form__title-br">
               (владельца кота)</h2>
             <div class="contacts-form__container">
               <label class="contacts-form__label">

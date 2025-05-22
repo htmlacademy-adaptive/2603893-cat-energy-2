@@ -9,20 +9,20 @@
   &:active {
     opacity: 0.6;
   }
+}
 
-  .logo__text {
-    margin-left: 54px;
+.logo__text {
+  margin-left: 54px;
 
-    @media (min-width: $tablet-width) {
-      margin-left: 13px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-left: 14px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-left: 13px;
   }
 
-  .logo__pic {
-    display: flex;
+  @media (min-width: $desktop-width) {
+    margin-left: 14px;
   }
+}
+
+.logo__pic {
+  display: flex;
 }

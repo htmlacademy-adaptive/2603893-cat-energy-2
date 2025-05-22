@@ -1,129 +1,127 @@
-.programs-form {
-  .programs-form__wrapper {
-    padding: 27px 20px 19px;
-    border-top: 1px solid #d9d9d9;
-    border-bottom: 1px solid #d9d9d9;
+.programs-form__wrapper {
+  padding: 27px 20px 19px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
-    @media (min-width: $tablet-width) {
-      padding: 40px 70px 0;
-      border: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 74px 110px 0;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 40px 70px 0;
+    border: none;
   }
 
-  .programs-form__box {
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 0;
+  }
+}
+
+.programs-form__box {
+  display: block;
+
+  @media (min-width: $tablet-width) {
     display: block;
-
-    @media (min-width: $tablet-width) {
-      display: block;
-    }
-
-    @media (min-width: $desktop-width) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 80px;
-    }
   }
 
-  .programs-form__list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    list-style-type: none;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secodary-text-color;
-    text-transform: uppercase;
-
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      gap: 13px;
-      line-height: normal;
-    }
-
-    @media (min-width: $desktop-width) {
-      gap: 16px;
-    }
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
+}
 
-  .programs-form__container {
-    margin-bottom: 24px;
+.programs-form__list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secodary-text-color;
+  text-transform: uppercase;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 72px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
-  }
-
-  .programs-form__container--radio {
-    padding: 19px 0 0;
-    margin-bottom: 0;
-    position: relative;
-
-    @media (min-width: $tablet-width) {
-      padding: 30px 0 27px 30px;
-      border: 1px solid #d9d9d9;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 25px 0 15px 27px;
-      border: 1px solid #d9d9d9;
-    }
-  }
-
-  .programs-form__container-radio::before {
-    content: "";
-    height: 1px;
-    width: calc(100% + 40px);
-    position: absolute;
-    background-color: #d9d9d9;
-    left: -20px;
-    top: 0;
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }
-
-  .programs-form__item {
-    display: flex;
-    align-items: center;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
     gap: 13px;
-
-    &:last-child {
-      gap: 8px;
-    }
+    line-height: normal;
   }
 
-  .programs-form__label {
-    display: flex;
-    align-items: center;
+  @media (min-width: $desktop-width) {
+    gap: 16px;
+  }
+}
+
+.programs-form__container {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
 
-  .programs-form__input {
-    font-family: inherit;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $secodary-text-color;
-    padding: 12px 20px 13px 15px;
-    text-transform: uppercase;
-    flex-grow: 1;
+.programs-form__container--radio {
+  padding: 19px 0 0;
+  margin-bottom: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 27px 30px;
     border: 1px solid #d9d9d9;
+  }
 
-    @media (min-width: $tablet-width) {
-      padding: 11px 20px;
-      font-size: 20px;
-      line-height: normal;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 25px 0 15px 27px;
+    border: 1px solid #d9d9d9;
+  }
+}
+
+.programs-form__container-radio::before {
+  content: "";
+  height: 1px;
+  width: calc(100% + 40px);
+  position: absolute;
+  background-color: #d9d9d9;
+  left: -20px;
+  top: 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.programs-form__item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  &:last-child {
+    gap: 8px;
+  }
+}
+
+.programs-form__label {
+  display: flex;
+  align-items: center;
+}
+
+
+.programs-form__input {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $secodary-text-color;
+  padding: 12px 20px 13px 15px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  border: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

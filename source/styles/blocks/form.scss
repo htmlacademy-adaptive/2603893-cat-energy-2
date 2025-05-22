@@ -1,63 +1,63 @@
 .form {
   padding: 0;
+}
 
-  .form__container {
-    display: block;
+.form__container {
+  display: block;
 
-    @media (min-width: $tablet-width) {
-      display: flex;
-    }
-
-    @media (min-width: $desktop-width) {
-      justify-content: center;
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
   }
 
-  .form__title {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    text-align: center;
-    margin-bottom: 24px;
+  @media (min-width: $desktop-width) {
+    justify-content: center;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font-size: 24px;
-      line-height: 32px;
-    }
+.form__title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.form__input {
+  margin-bottom: 16px;
+  width: 100%;
+  padding: 13px;
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $secodary-text-color;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+    margin-bottom: 0;
   }
 
-  .form__input {
-    margin-bottom: 16px;
-    width: 100%;
-    padding: 13px;
-    font-family: $primary-font, Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    text-transform: uppercase;
-    color: $secodary-text-color;
-    border: 1px solid #cdcdcd;
-
-    @media (min-width: $tablet-width) {
-      width: 376px;
-      margin-bottom: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 496px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 496px;
   }
+}
 
-  .form__button {
-    padding: 15px 0;
-    width: 100%;
+.form__button {
+  padding: 15px 0;
+  width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    padding: 14px 0;
     font-size: 20px;
     line-height: 26px;
-
-    @media (min-width: $tablet-width) {
-      width: 256px;
-      padding: 14px 0;
-      font-size: 20px;
-      line-height: 26px;
-    }
   }
 }

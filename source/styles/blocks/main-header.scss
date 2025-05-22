@@ -1,14 +1,4 @@
 .main-header {
-  .main-header__container {
-    padding: 16px 20px 12px;
-    display: flex;
-    align-items: center;
-
-    @media (min-width: $tablet-width) {
-      padding: 0;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 25px 30px;
@@ -19,5 +9,15 @@
     padding: 55px 110px 0;
     background-color: transparent;
     align-items: center;
+  }
+}
+
+.main-header__container {
+  padding: 16px 20px 12px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
