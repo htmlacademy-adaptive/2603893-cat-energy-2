@@ -1,178 +1,176 @@
-.steps {
-  .steps__wrapper {
-    padding: 0 20px 49px;
+.steps__wrapper {
+  padding: 0 20px 49px;
 
-    @media (min-width: $tablet-width) {
-      padding: 0 85px 47px 30px;
-      border-bottom: 1px solid #e6e6e6;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0 110px 69px;
-      border-bottom: none;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0 85px 47px 30px;
+    border-bottom: 1px solid #e6e6e6;
   }
 
-  .steps__list {
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 69px;
+    border-bottom: none;
+  }
+}
+
+.steps__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 0;
+    row-gap: 37px;
+  }
+}
+
+.steps__item {
+  padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    gap: 24px;
-
-    @media (min-width: $tablet-width) {
-      flex-flow: row wrap;
-      justify-content: space-between;
-      gap: 0;
-      row-gap: 37px;
-    }
+    margin-left: 0;
+    padding: 151px 26px 57px 0;
   }
 
-  .steps__item {
-    padding-left: 80px;
-
-    @media (min-width: $tablet-width) {
-      position: relative;
-      margin-left: 0;
-      padding: 151px 26px 57px 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 151px 0 57px;
-    }
+  @media (min-width: $desktop-width) {
+    padding: 151px 0 57px;
   }
+}
 
-  .steps__item--leaf::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/stack.svg#iconleaf");
-    width: 60px;
-    height: 60px;
+.steps__item--leaf::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#iconleaf");
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 47px;
     left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-      top: 47px;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 80px;
-      height: 80px;
-      top: 45px;
-    }
   }
 
-  .steps__item--powder::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/stack.svg#iconpowder");
-    width: 60px;
-    height: 60px;
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+    top: 45px;
+  }
+}
+
+.steps__item--powder::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#iconpowder");
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 47px;
     left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-      top: 47px;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 80px;
-      height: 80px;
-      top: 45px;
-    }
   }
 
-  .steps__item--food::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/stack.svg#iconfood");
-    width: 60px;
-    height: 60px;
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+    top: 45px;
+  }
+}
+
+.steps__item--food::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#iconfood");
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 40px;
     left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-      top: 40px;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 80px;
-      height: 80px;
-      top: 45px;
-    }
   }
 
-  .steps__item--time::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/stack.svg#icontime");
-    width: 60px;
-    height: 60px;
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+    top: 45px;
+  }
+}
+
+.steps__item--time::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icontime");
+  width: 60px;
+  height: 60px;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 38px;
     left: 0;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-      top: 38px;
-      left: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 80px;
-      height: 80px;
-      top: 45px;
-    }
   }
 
-  .steps__title {
-    margin-bottom: 42px;
+  @media (min-width: $desktop-width) {
+    width: 80px;
+    height: 80px;
+    top: 45px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 32px;
-    }
+.steps__title {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.steps__description {
+  margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    line-height: 24px;
+  }
+}
+
+.steps__number {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 26px;
+    display: block;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: -1;
   }
 
-  .steps__description {
-    margin-top: 3px;
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 245px;
-      line-height: 24px;
-    }
+.steps__number--first {
+  @media (min-width: $tablet-width) {
+    right: 43px;
   }
 
-  .steps__number {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 0;
-      right: 26px;
-      display: block;
-      font-size: 280px;
-      line-height: 280px;
-      color: #f2f2f2;
-      z-index: -1;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 0;
-    }
-  }
-
-  .steps__number--first {
-    @media (min-width: $tablet-width) {
-      right: 43px;
-    }
-
-    @media (min-width: $desktop-width) {
-      right: 18px;
-    }
+  @media (min-width: $desktop-width) {
+    right: 18px;
   }
 }

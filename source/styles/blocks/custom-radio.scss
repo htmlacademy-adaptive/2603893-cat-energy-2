@@ -16,18 +16,18 @@
   @media (min-width: $desktop-width) {
     margin-right: 19px;
   }
+}
 
-  .custom-radio__checkmark {
-    width: 13px;
-    height: 13px;
-    border-radius: 13px;
-    display: none;
-    background-color: $bg-color-primary;
+.custom-radio__checkmark {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  display: none;
+  background-color: $bg-color-primary;
 
-    @media (min-width: $tablet-width) {
-      width: 18px;
-      height: 18px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
   }
 }
 

@@ -12,19 +12,19 @@
     height: 40px;
     margin-right: 20px;
   }
+}
 
-  .custom-checkbox__checkmark {
-    display: none;
-    width: 18px;
-    height: 14px;
-    background-image: url("../../icons/tick.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.custom-checkbox__checkmark {
+  display: none;
+  width: 18px;
+  height: 14px;
+  background-image: url("../../icons/tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    @media (min-width: $tablet-width) {
-      width: 24px;
-      height: 19px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 24px;
+    height: 19px;
   }
 }
 
